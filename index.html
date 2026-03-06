@@ -237,11 +237,11 @@
         </div>
     </div>
 
-    <!-- Hidden YouTube Player -->
+    <!-- Hidden SoundCloud Player -->
     <div style="position: fixed; bottom: -500px; left: 0;">
         <iframe id="birthdayMusic" width="0" height="0" 
-                src="https://www.youtube.com/embed/Wu8NeFXaoOc?enablejsapi=1&loop=1&playlist=Wu8NeFXaoOc" 
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/discover/sets/track-stations:183875124&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" 
+                frameborder="0" allow="autoplay" scrolling="no">
         </iframe>
     </div>
 
@@ -258,9 +258,9 @@
             // Show only the new cake
             document.getElementById('cakeDisplay').classList.remove('hidden');
             
-            // Play YouTube music
+            // Play SoundCloud music
             const music = document.getElementById('birthdayMusic');
-            music.src = music.src.replace('enablejsapi=1', 'enablejsapi=1&autoplay=1');
+            music.src = music.src.replace('auto_play=false', 'auto_play=true');
             
             // Create big fireworks
             createBigFireworks();
